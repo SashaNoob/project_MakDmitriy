@@ -52,8 +52,24 @@ window.onload = showSlides;
   font-style: normal;
   font-size: 24px;
   font-family: Helvetica, Arial,serif;
-  text-align: left;
+  text-align: center;
   width: 90%;
+
+}
+
+
+
+
+.main_text2{
+  text-shadow: 5px 5px 8px black ;
+  color: black;
+  font-style: italic;
+  text-indent: 20px;
+  font-size: 24px;
+  text-align: center;
+  width: 90%;
+
+
 
 }
 
@@ -102,18 +118,12 @@ window.onload = showSlides;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 1000px;
   text-align: center;
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -164,6 +174,30 @@ window.onload = showSlides;
 
 }
 
+
+
+.block1{
+width:100%;
+height: 150px;
+background: radial-gradient(at left,  white,yellow );
+border: 5px double black;
+
+}
+
+
+
+.block2{
+  margin-left: auto;
+  margin-right: auto;
+float:left;
+width:600px;
+height:400px;
+background: radial-gradient(at bottom,  white,yellow );
+}
+
+
+
+
 body {
 
   background-image: url("./Images/ornament.png");
@@ -179,7 +213,7 @@ body {
 
   <body>
 
-      <!--<img src = "./Images/BG_Image.jpg" class = "main_image" > -->
+    <div class = "block1">
       <p class = "main_text" onload="showSlides()">
 
         Добрый день! Меня зовут <strong> Дмитрий Макаров </strong>. Я отец трех детей,
@@ -188,25 +222,40 @@ body {
         Цель этой страницы - прорекламировать меня. Рад всем помочь!
 
       </p>
+    </div>
+
+
+
+      <div class="block2">
+<p class = "main_text2">
+  КАКОЙ-ТО ТЕКСТ
+</p>
+
+
+
+       </div>
+
+      <!--<img src = "./Images/BG_Image.jpg" class = "main_image" > -->
+
 
       <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
+
     <img src="./Images/Image1.jpg" class = "img_slider">
     <div class="text"><strong>1</strong></div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
+
     <img src="./Images/Image2.jpg" class = "img_slider">
     <div class="text"><strong>2</strong></div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
+
     <img src="./Images/Image3.jpg" class = "img_slider">
     <div class="text"><strong>3</strong></div>
   </div>
@@ -228,17 +277,18 @@ body {
   </div>
 
 
-  <div>
 
-  </div>
 
   <div>
 
    </div>
 
-  <div> </div>
 
-  <div> </div>
+
+
+
+
+
 
   <div> </div>
 
