@@ -86,25 +86,10 @@ window.onload = showSlides;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  color: white;
-  padding: 16px;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
+
 
 /* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -179,8 +164,8 @@ window.onload = showSlides;
 .block1{
 width:100%;
 height: 150px;
-background: radial-gradient(at left,  white,yellow );
-border: 5px double black;
+background:none;
+
 
 }
 
@@ -188,10 +173,10 @@ border: 5px double black;
 
 .block2{
   margin-left: auto;
-  margin-right: auto;
-float:left;
-width:600px;
-height:400px;
+  margin-right: 100px;
+float:center;
+width:110%;
+height:100% ;
 background: radial-gradient(at bottom,  white,yellow );
 }
 
@@ -200,9 +185,9 @@ background: radial-gradient(at bottom,  white,yellow );
 
 body {
 
-  background-image: url("./Images/ornament.png");
-  background-size: 300px 300px;
-
+  background-image: url("./Images/image1.jpg");
+  background-size: cover;
+background-attachment: fixed;
 
 }
 
@@ -212,24 +197,66 @@ body {
 </head>
 
   <body>
+    <br><br><br><br><br><br><br><br>
 
     <div class = "block1">
       <p class = "main_text" onload="showSlides()">
 
-        Добрый день! Меня зовут <strong> Дмитрий Макаров </strong>. Я отец трех детей,
+   Меня зовут  Дмитрий Макаров.<br><strong>--------------------------------------- </strong> <br>Я отец трех детей,
         более 15 лет проработал в спортивной индустрии.
         <br>
-        Цель этой страницы - прорекламировать меня. Рад всем помочь!
+        Цель этой страницы - прорекламировать меня. Рад всем помочь!</b>
 
       </p>
     </div>
 
 
+    <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+          <div class="block2">
+    <p class = "main_text2">
+      КАКОЙ-ТО ТЕКСТ
+    </p>
+    <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
 
-      <div class="block2">
-<p class = "main_text2">
-  КАКОЙ-ТО ТЕКСТ
-</p>
+
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+
+        <img src="./Images/Image1.jpg" class = "img_slider">
+        <div class="text"><strong>1</strong></div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="./Images/Image2.jpg" class = "img_slider">
+        <div class="text"><strong>2</strong></div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="./Images/Image3.jpg" class = "img_slider">
+        <div class="text"><strong>3</strong></div>
+      </div>
+
+      <!-- Next and previous buttons -->
+
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
 
 
 
@@ -239,39 +266,7 @@ body {
 
 
       <!-- Slideshow container -->
-<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-
-    <img src="./Images/Image1.jpg" class = "img_slider">
-    <div class="text"><strong>1</strong></div>
-  </div>
-
-  <div class="mySlides fade">
-
-    <img src="./Images/Image2.jpg" class = "img_slider">
-    <div class="text"><strong>2</strong></div>
-  </div>
-
-  <div class="mySlides fade">
-
-    <img src="./Images/Image3.jpg" class = "img_slider">
-    <div class="text"><strong>3</strong></div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
 
 
   </div>
@@ -282,6 +277,7 @@ body {
   <div>
 
    </div>
+
 
 
 
